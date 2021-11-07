@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM PEMESANAN BARANG - PRAKTIKUM</title>
+</head>
+<body>
+  <nav style="background-color: rgb(134, 134, 134); padding-top: 10px; padding-bottom: 10px;"> 
+    <ul style="display: flex; list-style-type: none; gap: 10px; justify-content: center;">
+      <li> 
+        <a href="/">Home</a><b> |   </b>
+      </li> 
+
+      <li>
+        <a href="/link">Generate Link</a><b> |   </b>
+      </li>
+
+      <li>
+        <a href="/history">Transaction History</a><b> |   </b>
+      </li> 
+
+      <li> 
+        <a href="/">Policy</a><b> |   </b>
+      </li> 
+
+      <li> 
+        <a href="/">Logout</a><b> |   </b>
+      </li> 
+    </ul> 
+  </nav>
+  <main style="margin-top: 5%;">
+    <img width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGGWm-eC5kY4RTr1-iH-k_eaQXOqnwvLGkoA&usqp=CAU" align="left" alt="">
+    <a><fieldset style="background-color: rgb(207, 207, 190);"></a>
+    <table>
+      <tr>
+        <td>Tittle Here : </td>
+        <td><input type="text" placeholder="MacBook Air E800 "></td>
+      </tr>
+      <tr>
+        <td>Description : </td>
+        <td><textarea name="name" rows="8" cols="80" placeholder="Year: 2009 Model: Condition: Mint"></textarea></td>
+      </tr>
+      <tr>
+        <td>Accout number : </td>
+        <td><input type="number" name="account number" placeholder="123-456-789-0"></td>
+      </tr>
+      <tr>
+        <td>Bank</td>
+        <td>
+          <select name="bank">
+             <option value="BCA">BCA</option>
+             <option value="BNI">BNI</option>
+             <option value="CIMB Niaga">CIMB Niaga</option>
+             <option value="Mandiri">Mandiri</option>
+          </select>
+         </td>
+      </tr>
+      <tr>
+        <td>Account Holder : </td>
+        <td><input type="text" placeholder="Name Here "></td>
+      </tr>
+      <tr>
+        <td>Transcation : </td>
+        <td><select name="tes">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option></td>
+      </tr>
+      <tr>
+        <td>
+          </select>
+            </p>   
+             <p>*if the transaction is for 3 person, choose 3 from the drop-down list</p>
+             <p>
+                <form action="/action_page.php"> </form>
+                 <input type="checkbox" name="1" value="Send to Mobile Phone"> Send to Mobile Phone<br> 
+                 <input type="checkbox" name="2" value="Send to Email"> Send to Email<br>       
+            </p> 
+       </td>
+      </tr>
+      <tr>
+        <td>Send to Mobile phone : </td>
+        <td><input type="text" placeholder="083675432514"></td>
+      </tr>
+      <tr>
+        <td>Send to Email : </td>
+        <td><input type="email" placeholder="fys_06@yahoo.com"></td>
+      </tr>
+      <tr align="right">
+        <td><p><input type="submit" value="Generate Nabr Link" style="background-color: rgb(5, 146, 0);"></td></p>
+      </tr>
+    </table>
+   </main>
+  </body>
+ </html>
