@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor</title>
+</head>
+<body>
+
+
+    <h1 id="namaMotor"></h1>
+
+    <button id="klakson" onclick="onderdilKlakson()"></button>
+    <p id="bunyi">.................</p> 
+
+    <button id="gas" onclick="onderdilGas()"></button>
+    <p id="kecepatan">kecepatan 20km</p>
+    <script>
+        let honda = 'Honda';
+        document.getElementById('namaMotor').innerHTML = honda;
+
+        // ===================================
+
+        document.getElementById('klakson').innerHTML = 'Klakson';
+
+        // Deklarasi Function
+        function onderdilKlakson() {
+            // Isi Function
+            document.getElementById('bunyi').innerHTML = 'tin tin tin';
+            document.getElementById('bunyi').style.color = 'purple';
+        }
+    
+
+        // onderdilKlakson();
+
+        // =========================
+
+        document.getElementById('gas').innerHTML = 'ngenggg';
+         
+        function onderdilGas() {
+            document.getElementById('kecepatan').innerHTML = 'kecepatan 80km'; 
+            document.getElementById('kecepatan').style.color = 'blue';
+        }
+
+    </script>
+</body>
+</html>
