@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Praktikum No.4</title> 
+    <script>
+        function cetakHasil(){
+            let bilanganPertama = document.getElementById("bilanganpertama");
+            let bilanganKedua = document.getElementById("bilangankedua");
+            console.log (Number(bilanganPertama.value));
+            console.log(Number(bilanganKedua.value));
+            let hasil = document.getElementById("hasil");
+            hasil.value = Number(bilanganPertama.value)+Number(bilanganKedua.value);
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Jumlah Dua Bilangan</h3>
+    <input type="number" id="bilanganpertama"><br>+<br>
+    <input type="number" id="bilangankedua"><br>=
+    <br>
+    <button onclick="cetakHasil()">Cetak Hasil</button>
+    <br>
+    <br>
+    <input type="number" id="hasil"> 
+</body>
+</html>

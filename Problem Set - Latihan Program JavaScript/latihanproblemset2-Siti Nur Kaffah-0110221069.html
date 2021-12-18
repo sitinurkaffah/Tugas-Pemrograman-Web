@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Soal Praktikum No.2</title>
+  </head>
+  <body>
+    <h3>Menghitung Kurs Rupiah</h3>
+    <fieldset>
+        <pre>
+          <div class="">
+            Masukan Nilai USD ($) = <input type="number" id="uang" value=""></div>
+        </pre>
+        <p class="center">
+           <button type="button" onclick="hitung()">Hitung</button>
+           <button type="reset" value="reset">Reset</button>
+        </p class="center">
+    </fieldset>
+    <script type="text/javascript">
+      function hitung(){
+        const rupiah = 14650;
+        let uang = document.getElementById("uang").value;
+        console.log ("cetak uang : " + uang);
+        let mariHitung = rupiah * uang;
+        let nf = new Intl.NumberFormat('id-ID');
+        console.log ("Menghitung... : " + mariHitung)
+        window.alert ("Nilai Tukar Uang = Rp" + nf.format(mariHitung))
+      }
+    </script>
+  </body>
+</html>
