@@ -1,0 +1,9 @@
+img {
+    width: 65%;
+    max-height: 75vh;
+    border-radius: 15px;
+}
+
+form {
+    border: 0px;
+}

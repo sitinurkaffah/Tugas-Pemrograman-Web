@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="kurs.js"></script>
+    <title>Kurs Rupiah-Siti Nur Kaffah</title>  
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style> 
+</head>
+<body>
+  <h1 class="text">Kurs Rupiah - Mata Uang Asing</h1>
+    <fieldset style="background-color: rgb(150, 222, 240);">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <div class="container">
+            <form id="form1">
+                <div>
+                    <input type="text" id="rupiah" placeholder="Nilai Kurs">
+                    <a href="#"><select name="" id="kurs">
+                        <option value="usd">Dollar US</option>
+                        <option value="sgd">Dollar Singapore</option>
+                        <option value="rm">Ringgit Malaysia</option>
+                        <option value="yen">Yen Jepang</option>
+                        <option value="eur">Euro</option>
+                        <option value="riyal">Riyal Arab Saudi</option>
+                    </select></a>
+                    <a href="#"><button id="konversiButton" onclick="konversi()">Konversi</button></a>
+                    <input type="text" placeholder="Rupiah" id="asing">
+                </div>
+                <div>
+                    <button type="reset" id="hapus" onclick="hapus()">Reset</button>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</body>
+</html>
